@@ -1,0 +1,150 @@
+//---------------------------
+//
+// Sidebar
+//
+//---------------------------
+
+.logo {
+  display: block;
+  margin-bottom: half($line-height__base);
+  font-weight: $font-weight__regular;
+
+  @media #{$large-down} {
+    margin-bottom: 0;
+    line-height: $line-height__medium;
+  }
+
+  a {
+    transition: $base-transition-speed;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    &:hover { color: $color__type--hover; }
+  }
+
+  &__img {
+    max-height: $line-height__base;
+    vertical-align: middle;
+
+    @media #{$large-up} {
+      display: inline-block;
+    }
+  }
+}
+
+.sidebar {
+  position: relative;
+  padding: half($line-height__medium) 0;
+  line-height: $line-height__medium;
+
+  @media #{$large-down} {
+    background-color: #fff;
+    border-bottom: 1px solid $border-color;
+  }
+
+  @media #{$large-up} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $sidebar-width;
+    height: 100%;
+    background-color: $addition-bg;
+    padding: $line-height__base 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__description {
+    margin-bottom: $line-height__medium;
+    padding-bottom: $line-height__medium;
+    border-bottom: 1px solid $border-color--darker;
+
+    @media #{$large-down} {
+      display: none;
+    }
+  }
+
+  &__navigation {
+    @media #{$large-up} {
+      margin-bottom: $line-height__medium;
+      padding-bottom: $line-height__medium;
+      border-bottom: 1px solid $border-color--darker;
+    }
+
+    li {
+      display: block;
+      margin-bottom: quarter($line-height__base);
+
+      font-size: $font-size__small;
+      line-height: $line-height__medium;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media #{$large-down} {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+        line-height: $line-height__base;
+      }
+    }
+
+    a {
+      transition: $base-transition-speed;
+      text-decoration: none;
+
+      @media #{$large-down} {
+        display: block;
+        padding-top: quarter($line-height__base);
+        padding-bottom: quarter($line-height__base);
+        border-bottom: 1px solid $border-color;
+      }
+    }
+
+    @media #{$large-down} {
+      margin-bottom: quarter($line-height__base);
+    }
+  }
+
+  &__social-nav {
+    margin-bottom: $line-height__medium;
+    list-style: none;
+    padding: 0;
+
+    .icon {
+      vertical-align: -moz-middle-with-baseline;
+      vertical-align: -webkit-baseline-middle;
+      fill: $color__type;
+      transition: $base-transition-speed;
+
+      &:hover {
+        fill: $color__type--hover;
+      }
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    @media #{$large-down} {
+      text-align: center;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    @media #{$large-up} {
+      position: absolute;
+      bottom: $line-height__base;
+    }
+  }
+
+  // Add border to sidebar (as header) in homepage in small screen
+  @media #{$large-down} {
+    .home-template & {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}
