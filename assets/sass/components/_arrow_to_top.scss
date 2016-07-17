@@ -67,14 +67,14 @@ ARROW TO TOP
   opacity: 1;
 }
 
-@media only screen and (min-width: 768px) {
+@media #{$medium-down} {
   .cd-top {
     right: 20px;
     bottom: 20px;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media #{$large-up} {
   .cd-top {
     height: 60px;
     width: 60px;

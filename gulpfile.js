@@ -40,7 +40,6 @@ gulp.task('js', function(){
     './assets/js/scripts/jquery-2.1.4.min.js',
     './assets/js/scripts/jquery.fitvids.js',
     './assets/js/scripts/jquery.ghostHunter.min.js',
-    './assets/js/scripts/to_top.js',
     './assets/js/scripts/script.js'])
   .pipe(concat('app.js'))
   .pipe(rename({suffix: '.min'}))

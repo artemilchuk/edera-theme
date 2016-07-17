@@ -737,6 +737,30 @@ textarea {
   textarea:focus {
     border: 1px solid #7E7E7E; }
 
+@media only screen and (max-width: 40em) {
+  .mc-field-group {
+    width: 100% !important;
+    padding: 0; } }
+
+@media only screen and (max-width: 40em) {
+  .clear .button {
+    width: 100% !important;
+    padding: 6px 11px; } }
+
+.mce-response {
+  position: relative;
+  padding: 16px;
+  margin: 0 auto;
+  max-width: 45em;
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  /*
+    @media only screen and (min-width: 64.063em) {
+      padding: ($line-height__base * 1.5);
+    }
+   */ }
+
 /* -------------------------------- 
 
 ARROW TO TOP
@@ -794,11 +818,11 @@ ARROW TO TOP
   background-color: #e86256;
   opacity: 1; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 40em) {
   .cd-top {
     right: 20px;
     bottom: 20px; } }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 64.063em) {
   .cd-top {
     height: 60px;
     width: 60px;
