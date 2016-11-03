@@ -1161,7 +1161,7 @@ ARROW TO TOP
     .logo a:hover {
       color: #7E7E7E; }
   .logo__img {
-    max-height: 32px;
+    max-height: 67px;
     vertical-align: middle; }
     @media only screen and (min-width: 64.063em) {
       .logo__img {
@@ -1182,15 +1182,16 @@ ARROW TO TOP
       left: 0;
       width: 250px;
       height: 100%;
-      background-color: #e6f2fa;
+      background-color: #262626;
       padding: 32px 0;
       display: flex;
       align-items: center;
       text-align: center; } }
   .sidebar__description {
     margin-bottom: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #DADFE1; }
+    padding: 0px 22px 32px 22px;
+    border-bottom: 1px solid #DADFE1;
+    color: #ecf0f1; }
     @media only screen and (max-width: 64em) {
       .sidebar__description {
         display: none; } }
@@ -1213,6 +1214,7 @@ ARROW TO TOP
         margin-right: 0;
         line-height: 32px; } }
   .sidebar__navigation a {
+    color: #ecf0f1;
     transition: 0.4s;
     text-decoration: none; }
     @media only screen and (max-width: 64em) {
@@ -1231,7 +1233,7 @@ ARROW TO TOP
     .sidebar__social-nav .icon {
       vertical-align: -moz-middle-with-baseline;
       vertical-align: -webkit-baseline-middle;
-      fill: #333;
+      fill: #ecf0f1;
       transition: 0.4s; }
       .sidebar__social-nav .icon:hover {
         fill: #7E7E7E; }
@@ -1246,6 +1248,10 @@ ARROW TO TOP
       .sidebar__bottom {
         position: absolute;
         bottom: 32px; } }
+    .sidebar__bottom div {
+      color: #ecf0f1; }
+      .sidebar__bottom div a {
+        color: inherit; }
   @media only screen and (max-width: 64em) {
     .home-template .sidebar {
       border-bottom: 1px solid #ECF0F1; } }
@@ -1488,7 +1494,7 @@ ARROW TO TOP
   font-weight: 400; }
 
 .bold {
-  font-weight: 700; }
+  font-weight: 800; }
 
 .italic {
   font-style: italic; }

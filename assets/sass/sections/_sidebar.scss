@@ -23,7 +23,7 @@
   }
 
   &__img {
-    max-height: $line-height__base;
+    max-height: $line-height__max;
     vertical-align: middle;
 
     @media #{$large-up} {
@@ -48,7 +48,7 @@
     left: 0;
     width: $sidebar-width;
     height: 100%;
-    background-color: $addition-bg;
+    background-color: $sidebar-bg;
     padding: $line-height__base 0;
     display: flex;
     align-items: center;
@@ -57,8 +57,9 @@
 
   &__description {
     margin-bottom: $line-height__medium;
-    padding-bottom: $line-height__medium;
+    padding: 0px $line-height__small $line-height__base $line-height__small;
     border-bottom: 1px solid $border-color--darker;
+    color: $light-color;
 
     @media #{$large-down} {
       display: none;
@@ -92,6 +93,7 @@
     }
 
     a {
+      color: $light-color;
       transition: $base-transition-speed;
       text-decoration: none;
 
@@ -116,7 +118,7 @@
     .icon {
       vertical-align: -moz-middle-with-baseline;
       vertical-align: -webkit-baseline-middle;
-      fill: $color__type;
+      fill: $light-color;
       transition: $base-transition-speed;
 
       &:hover {
@@ -138,6 +140,12 @@
     @media #{$large-up} {
       position: absolute;
       bottom: $line-height__base;
+    }
+    & div {
+      color: $light-color;
+      & a {
+        color: inherit;
+      }
     }
   }
 
