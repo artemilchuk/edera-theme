@@ -35,7 +35,7 @@
     width: $sidebar-width;
     height: 100%;
 
-    background-color: #fff;
+    background-color: $brand-color;
     border-left: 1px solid $border-color;
     transform: translate3d(0px, 0px, 0px) translateX($sidebar-width);
     transition: all $base-transition-speed cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;

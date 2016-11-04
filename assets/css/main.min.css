@@ -1279,7 +1279,7 @@ ARROW TO TOP
     right: 0;
     width: 250px;
     height: 100%;
-    background-color: #fff;
+    background-color: #333;
     border-left: 1px solid #ECF0F1;
     transform: translate3d(0px, 0px, 0px) translateX(250px);
     transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s; }
