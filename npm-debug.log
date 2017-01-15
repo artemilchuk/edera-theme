@@ -1,25 +1,24 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'gulp' ]
-2 info using npm@2.11.3
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@3.10.5
 3 info using node@v0.12.5
-4 verbose install initial load of /Volumes/Data/EdEra/site_ed-era.com/blog/content/themes/EdEra 2.0/package.json
-5 verbose stack Error: Invalid version: "2.0"
-5 verbose stack     at Object.module.exports.fixVersionField (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:186:13)
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:32:38
-5 verbose stack     at Array.forEach (native)
-5 verbose stack     at normalize (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:31:15)
-5 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:338:5)
-5 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:300:12
-5 verbose stack     at evalmachine.<anonymous>:334:14
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
-5 verbose stack     at FSReqWrap.oncomplete (evalmachine.<anonymous>:95:15)
-6 verbose cwd /Volumes/Data/EdEra/site_ed-era.com/blog/content/themes/EdEra 2.0
-7 error Darwin 15.5.0
-8 error argv "node" "/usr/local/bin/npm" "install" "gulp"
-9 error node v0.12.5
-10 error npm  v2.11.3
-11 error Invalid version: "2.0"
-12 error If you need help, you may report this error at:
-12 error     <https://github.com/npm/npm/issues>
-13 verbose exit [ 1, true ]
+4 verbose stack Error: Invalid version: "2.0"
+4 verbose stack     at Object.module.exports.fixVersionField (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:191:13)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:32:38
+4 verbose stack     at Array.forEach (native)
+4 verbose stack     at normalize (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:31:15)
+4 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:349:5)
+4 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:311:12
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+4 verbose stack     at fs.js:334:14
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:43:10
+5 verbose cwd /Volumes/Data/EdEra/site_ed-era.com/ghost-0.8.0/content/themes/edera-theme
+6 error Darwin 15.6.0
+7 error argv "node" "/usr/local/bin/npm" "start"
+8 error node v0.12.5
+9 error npm  v3.10.5
+10 error Invalid version: "2.0"
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
